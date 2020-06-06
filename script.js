@@ -51,10 +51,14 @@ function newTodo() {
   button.innerHTML = "Delete";
 
   button.addEventListener ("click", function() {
-    list.removeChild(li)
-    count = count - 1;
-    itemCountSpan.textContent = count;
-    uncheckedCountSpan.textContent = parseInt(count) - document.querySelectorAll("input:checked").length;
+    let con = confirm("Are you sure you want to delete this?");
+    if (con === true) {
+      list.removeChild(li)
+      count = count - 1;
+      itemCountSpan.textContent = count;
+      uncheckedCountSpan.textContent = parseInt(count) - document.querySelectorAll("input:checked").length;
+      console.log(con);
+    }
   });
 
   li.appendChild(button);

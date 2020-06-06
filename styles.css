@@ -3,7 +3,7 @@
 }
 
 html, body {
-  background-color: #185f9e;
+  background-image: linear-gradient(#185f9e,#67aae6);
   margin: 0;
   padding: 0;
 }
@@ -48,6 +48,7 @@ ul {
   border: none;
   background-color: #185f9e;
   color: white;
+  cursor: pointer;
 }
 
 .todo-list {
@@ -78,7 +79,7 @@ ul {
   border: none;
   padding: 5px 8px;
   cursor: pointer;
-  background-color: #185f9e;
+  background-color: #b01e1e;
   color: white;
   font-weight: bold;
 }
